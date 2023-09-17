@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<body style="background:#ff0000;text-align:center;">
+<html>
+   <body>
+      <h1 style="color:green;font-size:30px;font-weight:bold;">
+      	TrueDarkLord
+      </h1>
+      <p>This is a simplistic website made with the intent of testing out github webpages.</p>
+      
+      <p id="GFG_UP" style="font-size: 16px;font-weight: bold;"></p>
+ 
+    <button onclick="gfg_Run()"style="height:50px;width:160px">
+        Click here
+    </button>
+    
+    <script>
+        let el_up = document.getElementById("GFG_UP");
+        let el_down = document.getElementById("GFG_DOWN");
+                         
+        //el_up.innerHTML = "Inner HTML";
+                 
+        function changeColor(color) {
+            document.body.style.background = color;
+        }
+         
+        function gfg_Run() {
+
+         changeColor("#" + Math.floor(Math.random()*16777215).toString(16))
+           
+        }       
+    </script>
+   </body>
+</html>
+
